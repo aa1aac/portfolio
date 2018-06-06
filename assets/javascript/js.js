@@ -1,22 +1,22 @@
 $(document).ready(function(){
-    var window = $(window);
-var elem = $(".num")
-
-function isScrolledIntoView(elem, window) {
-    var docViewTop = window.scrollTop();
-    var docViewBottom = docViewTop + window.height();
-
-    var elemTop = elem.offset().top;
-    var elemBottom = elemTop + elem.height();
-
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-}
-$(document).on("scroll", function () {
-    if (isScrolledIntoView(elem, window)) {
-        elem.addClass("animate")
-    }
-});
+    new WOW().init();
 $('.carousel').carousel({
     interval: 1000
   })
+  $(".contact").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#Contact").offset().top},
+        'veryslow');
+});
+$(".projects").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#projects").offset().top},
+        'veryslow');
+});
+$(".about").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#About").offset().top},
+        'veryslow');
+});
+
 })
