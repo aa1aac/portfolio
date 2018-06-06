@@ -1,0 +1,242 @@
+/* media query */
+@media(max-width:600px){
+
+}
+/* header */
+header{
+    display: flex;
+    flex-direction: row;
+    align-self: space-around;
+    color:white;
+    margin: 0 auto;
+}
+header nav h1{
+    font-family: 'Pacifico', cursive;
+    text-transform: uppercase;
+    font-size:25px;
+    margin-right: 700px;
+    margin-left:150px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    opacity:0.75;
+}
+header a:hover{
+    color: white;
+}
+/* nav */
+#navbar{
+    display: flex;
+    height: 5%;
+    width:100%;
+    flex-direction: row;
+    flex-basis: end; 
+    position: fixed;
+    justify-items: center;
+}
+
+.first{
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    #welcome-section{
+        height:100%vh;
+    }
+/* hi */
+.hi{
+       position: absolute;
+       top:20%;
+       left:10%;
+       opacity: 0;
+       animation: disp 0.5s linear 0s 1 forwards;
+    }
+/* i'm */
+.Im{
+    position: absolute;
+    top:30%;
+    left:10%;
+    opacity: 0;
+    animation: disp 0.5s linear 0.5s 1 forwards;
+}
+/* front-end */
+.Front-end{
+    position: absolute;
+       top:40%;
+       left:10%;
+    opacity: 0;
+    animation: disp 0.5s linear 1s 1 forwards;
+}
+/* for web-developer */
+.web{
+    position: absolute;
+       top:50%;
+       left:10%;
+        opacity: 0;
+       animation: disp 0.5s linear 1.5s 1 forwards;
+    }
+    .learn{
+        position: absolute;
+           top:60%;
+           left:10%;
+            opacity: 0;
+           animation: disp 0.5s linear 2.5s 1 forwards;
+        }
+    .glyphigon{
+        position: absolute;
+        top: 80%;
+        opacity: 0.75;
+    }
+/* for disp animation */
+@keyframes disp{
+    100%{
+        opacity: 1;
+        text-transform: uppercase;
+    }
+}
+.btn:hover{
+    animation: border 1s linear 0s 1 forwards;
+}
+@keyframes border{
+    0%{
+     padding: 1px;
+     color:white;
+    }
+    25%{
+      padding: 2px;
+      color:white;
+      opacity: 1;
+    }
+    50%{
+        padding: 5px;
+        font-size: 20px;
+        color:white;
+    }
+    100%{
+       border:white 3px solid;
+       color:white;
+    }
+}
+#About{
+   text-align:center;
+}
+
+#welcome-section{
+    display: absolute;
+    height: 100vh;
+    left:-1000px;
+    color: white;
+}
+#About hr{
+    width:50px;
+    height:2px;
+    background-color:black;
+}
+#my_experience{
+  margin-top:5%;
+  color:white;
+}
+#my_experience i{
+    font-size:60px;
+}
+.orange{
+    background-color:rgb(255, 94, 0); 
+}
+.row{
+    width:101%;
+    padding: 5%;
+}
+#my_experience h4{
+    font-size:40px;
+    text-transform: uppercase;
+}
+.num{
+    color:white;
+    animation:num 0.5s linear 0s 1 forwards;
+}
+@keyframes num{
+    0%{
+        opacity: 0.25;
+    }
+    25%{
+           opacity: 0.5;
+    }
+    50%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity:1;
+        color: white;
+        font-size: 50px;
+    }
+}
+.black{
+    color:black;
+}
+#what_I_do h4{
+   
+    font-size:40px;
+    text-transform: uppercase;
+}
+#what_I_do{
+    margin-top:5%;
+}
+#About{
+    background-color: lightgray;
+}
+#what_I_do:hover{
+    color:orangered;
+    transition-duration: 2s fadein all; 
+}
+#projects{
+    background-color: lightgrey;
+    text-align: center;
+    padding: 50px;
+
+}
+section#projects hr{
+   background-color:darkblue;
+   height:3px;
+   width:80px; 
+}
+#Contact{
+    text-align: center;
+    background-color:white;
+    padding: 3px;
+}
+#Contact hr{
+    background-color: orangered;
+    height:4px;
+    width:80px;
+}
+#btn:hover{
+ cursor: pointer;
+}
+#Contact i{
+    font-size: 50px;
+    
+}
+#Contact a{
+    color:black;
+}
+footer{
+    background-color: black;
+    color: white;
+    margin-bottom: 0;
+    padding:10px;
+    text-align: center;
+    font-size:30px;
+    font-family:'Pacifico',cursive,'Times New Roman', Times, serif;
+}
+footer a{
+  color:white;
+  margin-left:20px;
+}
+a:hover{
+    cursor: pointer;
+}
