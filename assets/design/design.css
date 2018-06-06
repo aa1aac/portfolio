@@ -140,6 +140,8 @@ header a:hover{
 #my_experience{
   margin-top:5%;
   color:white;
+  font-size:40px;
+  text-transform: uppercase;
 }
 #my_experience i{
     font-size:60px;
@@ -151,10 +153,7 @@ header a:hover{
     width:101%;
     padding: 5%;
 }
-#my_experience h4{
-    font-size:40px;
-    text-transform: uppercase;
-}
+
 .num{
     color:white;
     animation:num 0.5s linear 0s 1 forwards;
@@ -175,9 +174,6 @@ header a:hover{
         font-size: 50px;
     }
 }
-.black{
-    color:black;
-}
 #what_I_do h4{
    
     font-size:40px;
@@ -187,7 +183,9 @@ header a:hover{
     margin-top:5%;
 }
 #About{
-    background-color: lightgray;
+    background-color: black;
+    color:aliceblue;
+    font-weight: 100;
 }
 #what_I_do:hover{
     color:orangered;
@@ -239,4 +237,30 @@ footer a{
 }
 a:hover{
     cursor: pointer;
+}
+@media(max-width:700px){
+ h1{
+     font-size:20px;
+ }
+ .orange{
+     width:100%;
+ }
+ #About{
+     padding: 5px;
+ }
+ header nav h1{
+    margin-right: 15px;
+    margin-left:2px;
+    
+}
+}
+@media (max-width:500px){
+    h1{
+        font-size: 10px;
+    }
+    header nav h1{
+        margin-right:5px;
+        margin-left:0;
+        
+    }
 }
